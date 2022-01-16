@@ -1,0 +1,13 @@
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000000;
+}
+
+.cell.hovered {
+    background-color: RGB(62, 169, 244);
+}

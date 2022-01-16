@@ -1,0 +1,16 @@
+.results {
+    margin-left: 20px;
+}
+
+.results ul{
+    list-style: none;
+    padding: 0;
+}
+
+.results li {
+    background-color: #fbf8e2;
+    border: 1px solid RGB(251, 245, 223);
+    border-radius: 4px;
+    padding: 1rem 0.5rem;
+    margin-bottom: 0.5rem;
+}

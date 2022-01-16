@@ -1,0 +1,23 @@
+.App {
+    margin: 20px;
+    display: flex;
+}
+
+.controls {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 0.75rem;
+}
+
+.start {
+    padding: 0.75rem;
+    background-color: blue;
+    color: #ffffff;
+    border: none;
+    margin-left: 20px;
+    font-weight: 700;
+    border-radius: 4px;
+}
