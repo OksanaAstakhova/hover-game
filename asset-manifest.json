@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hover-game/static/css/main.066b9e73.css",
+    "main.js": "/hover-game/static/js/main.6235e0f6.js",
+    "static/js/787.ffe04415.chunk.js": "/hover-game/static/js/787.ffe04415.chunk.js",
+    "index.html": "/hover-game/index.html",
+    "main.066b9e73.css.map": "/hover-game/static/css/main.066b9e73.css.map",
+    "main.6235e0f6.js.map": "/hover-game/static/js/main.6235e0f6.js.map",
+    "787.ffe04415.chunk.js.map": "/hover-game/static/js/787.ffe04415.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.066b9e73.css",
+    "static/js/main.6235e0f6.js"
+  ]
+}
