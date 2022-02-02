@@ -11,9 +11,8 @@ function App() {
     const [selectedMode, setSelectedMode] = useState();
     const [modeName, setModeName] = useState("default");
     const [hoveredCells, setHoveredCells] = useState([]);
-    
 
-    const buttonIsDisabled = selectedMode === "default";
+    const buttonIsDisabled = modeName === "default";
 
     const handleStart = () => {
         setSelectedMode(modes.find(({ name }) => name === modeName));
@@ -25,7 +24,6 @@ function App() {
         const hovered = !!hoveredCells.find(
             (cell) => cell.row === row && cell.col === col
         );
-
         setHoveredCells(
             hovered
                 ? hoveredCells.filter(
@@ -38,14 +36,14 @@ function App() {
     useEffect(() => {
         fetch(modesUrl)
             .then((response) => response.json())
-            .then((data) =>
+            .then((data) => {
                 setModes(
                     Object.keys(data).map((mode) => ({
                         name: mode,
                         ...data[mode],
                     }))
-                )
-            )
+                );
+            })
             .catch((error) => console.log(error));
     }, []);
     return (
@@ -62,7 +60,11 @@ function App() {
                             </option>
                         ))}
                     </select>
-                    <button disabled={buttonIsDisabled} onClick={handleStart} className="start">
+                    <button
+                        disabled={buttonIsDisabled}
+                        onClick={handleStart}
+                        className="start"
+                    >
                         START
                     </button>
                 </div>
@@ -74,7 +76,7 @@ function App() {
                     />
                 )}
             </div>
-            <Results hoveredCells={hoveredCells}/>
+            <Results hoveredCells={hoveredCells} />
         </div>
     );
 }
